@@ -2,7 +2,7 @@ class PlacesController < ApplicationController
   def new
 	@place = Place.new
   end
-
+#i
   def create
 	@place = Place.new(params[:place])
 	if @place.save
