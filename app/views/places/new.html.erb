@@ -1,0 +1,56 @@
+<%= form_for(@place) do |p| %>
+	<%= render 'shared/error_messages' %>
+	<div class="field">
+		<%= p.label :name, "Name*" %><br />
+		<%= p.text_field :name %>
+	</div>
+
+	<div class="field">
+		<%= p.label :x_coord, "X GoogleMaps coordinate*" %><br />
+		<%= p.text_field :x_coord %>
+	</div>
+
+	<div class="field">
+		<%= p.label :y_coord, "Y GoogleMaps coordinate*" %><br />
+		<%= p.text_field :y_coord %>
+	</div>
+
+	<div class="field">
+		<%= p.label :tags, "Tags, separated by a space*" %><br />
+		<%= p.text_field :tags%>
+	</div>
+	
+	<div class="field">
+		<%= p.label :country, "Country" %><br />
+		<%= p.text_field :country%>
+	</div>
+
+	<div class="field">
+		<%= p.label :city, "City" %><br />
+		<%= p.text_field :city%>
+	</div>
+
+	<div class="field">
+		<%= p.label :street, "Home" %><br />
+		<%= p.text_field :street%>
+	</div>
+
+	<div class="field">
+		<%= p.label :time, "Time" %><br />
+		<%= p.text_field :time%>
+	</div>
+
+	<div class="field">
+		<%= p.label :cost, "Cost" %><br />
+		<%= p.text_field :cost%>
+	</div>
+
+	<div class="field">
+		<%= p.label :descr, "Short description" %><br />
+		<%= p.text_area :descr,  :size => "50x8"%>
+	</div>
+
+	<div class="actions">
+		<%= p.submit "Add" %>
+	</div>
+<% end %>
